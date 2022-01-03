@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-1(2t5h7qj*70lab(knxb5kx_ok3k2q2m#jivg&&e*55c)x*cwh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['.herokuapp.com']
+ALLOWED_HOSTS = ['create-art.herokuapp.com']
 CORS_ORIGIN_ALLOW_ALL = True
 
 # Application definition
@@ -136,15 +136,6 @@ USE_I18N = True
 USE_TZ = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-
-# AWS_LOCATION = 'static'
-# AWS_ACCESS_KEY_ID = 'AKIAUCV3TSDPNWZOXMN2'
-# AWS_SECRET_ACCESS_KEY = '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'
-# AWS_STORAGE_BUCKET_NAME = 'create-files'
-# AWS_QUERYSTRING_AUTH = False
-
 
 USE_S3 = os.getenv('USE_S3') == 'TRUE'
 
